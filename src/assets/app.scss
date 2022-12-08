@@ -1,0 +1,46 @@
+// Import root
+@import url("./root.scss");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.top-bar{
+    &__wrapper{
+        background-color: var(--primary);
+    }
+    &__inner-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        >div{
+            padding: .5rem;
+        }
+        a{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+    &__contact-blk{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin: 0 -1rem;
+        &-item{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 1rem;
+            text-decoration: none !important;
+            &-ico{
+                margin-right: .4rem;
+            }
+        }
+    }
+}
