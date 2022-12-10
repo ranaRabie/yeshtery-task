@@ -1,4 +1,4 @@
-import ContactItem from './Common/ContactItem'
+import ContactItem from '../Common/ContactItem'
 function TopBar() {
     return ( 
         <div className="top-bar__wrapper">

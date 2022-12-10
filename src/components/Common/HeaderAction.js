@@ -1,8 +1,9 @@
-function HeaderAction(props) {
+function HeaderAction({ onClick, ico, name, children }) {
     return ( 
-        <a className="main-header__actions-item" onClick={props.onClick}>
-            <div className="main-header__actions-item-ico">{ props.children }</div>
-            <div className="main-header__actions-item-name">{ props.name }</div>
+        <a className="main-header__actions-item" onClick={onClick}>
+            <div className="main-header__actions-item-ico">{ ico }</div>
+            <div className="main-header__actions-item-name">{ name }</div>
+            { children }
         </a>
      );
 }

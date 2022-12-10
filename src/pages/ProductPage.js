@@ -1,20 +1,26 @@
-import TopBar from "../components/TopBar"
-import Header from "../components/Header"
-import MainNav from "../components/MainNav"
+import { Component } from 'react'
+import HeadersWrapper from "../components/Header"
 import { Fragment } from 'react';
 
-function ProductPage() {
-    const cartNum = 0;
-    const handleCartClick = () => {
-        alert('cart')
+class ProductPage extends Component {
+    constructor(props) {
+        super(props);
     }
-    return ( 
-        <Fragment>
-            <TopBar></TopBar>
-            <Header cartClick={handleCartClick} cartNum={cartNum}></Header>
-            <MainNav></MainNav>
-        </Fragment>
-     );
+    state = {
+        cartNum: 0,
+        cartItems: [{name: 'abc', count: 1}, {name: 'def', count: 2}]
+    }
+    // handleCartClick = () => {
+    //     // alert('cart')
+    //     this.setState({cartNum: this.state.cartNum+1});
+    // }
+    render() { 
+        return ( 
+            <Fragment>
+                <HeadersWrapper cartNum={this.state.cartNum} cartItems={this.state.cartItems}></HeadersWrapper>
+            </Fragment>
+         );
+    }
 }
-
+ 
 export default ProductPage;
