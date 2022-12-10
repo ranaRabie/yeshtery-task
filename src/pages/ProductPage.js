@@ -1,6 +1,6 @@
-import { Component } from 'react'
+import { Component, Fragment } from 'react'
 import HeadersWrapper from "../components/Header"
-import { Fragment } from 'react';
+import Footer from "../components/Footer"
 
 class ProductPage extends Component {
     constructor(props) {
@@ -18,6 +18,7 @@ class ProductPage extends Component {
         return ( 
             <Fragment>
                 <HeadersWrapper cartNum={this.state.cartNum} cartItems={this.state.cartItems}></HeadersWrapper>
+                <Footer />
             </Fragment>
          );
     }
