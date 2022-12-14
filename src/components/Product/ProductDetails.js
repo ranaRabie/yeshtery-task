@@ -29,7 +29,7 @@ class ProductDetails extends Component {
     render() { 
         return ( 
             <div className="single-product__details">
-                <div className="single-product__details-logo"><img src={ this.props.product.logo } alt="image" /></div>
+                <div className="single-product__details-logo"><img src={ this.props.product.logo } alt="product logo" /></div>
                 <h3>{ this.props.product.name }</h3>
                 <div className="single-product__details-category">{ this.props.product.category }</div>
                 <div className="single-product__details-price">{ this.props.product.price }</div>
