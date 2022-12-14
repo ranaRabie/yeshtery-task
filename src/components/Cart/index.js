@@ -5,7 +5,7 @@ function Cart({ cartItems, isShowCart = false }) {
         <div className={`cart__dropdown ${isShowCart ? "cart__dropdown-active" : ""}`}>
             {cartItems.length > 0 
                 ? <div className="cart__dropdown-list">
-                    {cartItems.map(item => <CartItem item={item} />)}
+                    {cartItems.map((item, key) => <CartItem item={item} key={key} />)}
                 </div>
                 : <div className="cart__dropdown-no-items">
                     No items

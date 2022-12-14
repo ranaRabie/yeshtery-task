@@ -1,6 +1,6 @@
 function MainNav() {
     return ( 
-        <nav class="main-nav">
+        <nav className="main-nav">
             <div className="container">
                 <ul >
                     <li>

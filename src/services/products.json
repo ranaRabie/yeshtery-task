@@ -1,0 +1,30 @@
+{
+    "list": [
+        {
+            "id": 1,
+            "images": [
+                "images/product/prod1-img1.png", 
+                "images/product/prod1-img2.png",
+                "images/product/prod1-img3.png", 
+                "images/product/prod1-img4.png"
+            ],
+            "logo": "images/brand-logo.svg",
+            "name": "Adidas black t-shirt lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+            "category": "Men",
+            "rate": 4,
+            "price": "999 L.E",
+            "sizes": ["Small", "Meduim", "Large", "X-Large", "XX-Large"],
+            "colors": []
+        },
+        {
+            "id": 2,
+            "images": [],
+            "name": "Adidas black t-shirt lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+            "category": "Men",
+            "rate": 4,
+            "price": "999 L.E",
+            "sizes": ["Small", "Meduim", "Large", "X-Large", "XX-Large"],
+            "colors": []
+        }
+    ]
+}
