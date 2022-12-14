@@ -1,8 +1,8 @@
 function ListItem({ name, icon }) {
     return ( 
         <li>
-            <a>
-                {icon ? <img src={icon} /> : ''}
+            <a href="#">
+                {icon ? <img src={icon} alt="image" /> : ''}
                 { name }
             </a>
         </li>

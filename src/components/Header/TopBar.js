@@ -4,8 +4,8 @@ function TopBar() {
         <div className="top-bar__wrapper">
             <div className="container">
                 <div className="top-bar__inner-wrapper">
-                    <div><img src="images/logo.svg" /></div>
-                    <div>Valentine’s Day Offers! Buy Two Get One Free <a>Shop Now</a></div>
+                    <div><img src="images/logo.svg" alt="image" /></div>
+                    <div>Valentine’s Day Offers! Buy Two Get One Free <a href="#">Shop Now</a></div>
                     <div className="top-bar__contact-blk">
                         <ContactItem data="Contact Us" icon="images/icons/phone.svg" />
                         <ContactItem data="Track Order" icon="images/icons/cart.svg" />

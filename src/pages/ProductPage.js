@@ -5,9 +5,9 @@ import products from '../services/products.json'
 import Product from '../components/Product'
 
 class ProductPage extends Component {
-    constructor(props) {
-        super(props);
-    }
+    // constructor(props) {
+    //     super(props);
+    // }
     state = {
         prodId: 1,
         product: {
@@ -37,10 +37,10 @@ class ProductPage extends Component {
         this.setState({cartNum: parseInt(this.state.cartNum)+parseInt(this.state.count)});
     }
     handleSize = (s) => {
-        this.state.size = s
+        this.setState({size: s});
     }
     handleCount = (c) => {
-        this.state.count = c
+        this.setState({count: c});
     }
     render() { 
         return ( 
