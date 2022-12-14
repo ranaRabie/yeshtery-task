@@ -7,7 +7,7 @@ class ProductDetails extends Component {
     state = {
         selectedSize: null,
         count: 1,
-        size: null
+        size: "Small"
     }
     handleSizeChange = (e) => {
         this.setState({size: e.target.innerText});

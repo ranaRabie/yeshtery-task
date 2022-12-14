@@ -33,7 +33,7 @@ class ProductPage extends Component {
     componentDidUpdate() {
     }
     handleAddToCart = () => {
-        this.setState({cartItems: [...this.state.cartItems, {"img": this.state.product.images[0],"name": this.state.product.name, "count": this.state.count, "size": this.state.size}]});
+        this.setState({cartItems: [...this.state.cartItems, {"image": this.state.product.images[0],"name": this.state.product.name, "count": this.state.count, "size": this.state.size}]});
         this.setState({cartNum: parseInt(this.state.cartNum)+parseInt(this.state.count)});
     }
     handleSize = (s) => {
