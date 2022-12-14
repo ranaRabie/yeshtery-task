@@ -1,7 +1,7 @@
 function ListItem({ name, icon }) {
     return ( 
         <li>
-            <a href="#">
+            <a href="/">
                 {icon ? <img src={icon} alt="Footer list item icon" /> : ''}
                 { name }
             </a>
